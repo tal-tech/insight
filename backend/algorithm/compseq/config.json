@@ -1,0 +1,13 @@
+{
+    "host":"",
+    "port":1234,
+    "user":"",
+    "passwd":"",
+    "database":"",
+    "clickhousehost":"",
+    "clickhouseport":1234,
+    "clickhouseuser":"",
+    "clickhousepasswd":"",
+    "clickhousedatabase":"",
+    "httpport":1234
+}

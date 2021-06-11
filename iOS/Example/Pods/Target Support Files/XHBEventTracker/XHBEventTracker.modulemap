@@ -1,0 +1,6 @@
+framework module XHBEventTracker {
+  umbrella header "XHBEventTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

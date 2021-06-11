@@ -1,0 +1,97 @@
+.waterfall-item-wrapper{
+    width: 230px;
+    margin-bottom: 25px;
+
+    .popover-classname{
+            left:10px;
+    }
+    .waterfall-item-image{
+        width: 215px;
+        border-radius:10px;
+        //overflow: hidden;
+        position: relative;
+        box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+        img{
+            width:215px;
+            border-radius:10px;
+        }
+        .hover-editor-background{
+
+            background:lighten(black,30%);
+            opacity: 0.7;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            width: 220px;
+            border-radius:10px;
+            //overflow: hidden;
+        }
+        .hover-editor-input{
+            border-radius: 5px;
+        }
+        .hover-editor{
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            width: 220px;
+            border-radius:10px;
+            cursor: pointer;
+            //overflow: hidden;
+            .hover-editor-header{
+                width:90%;
+                position: absolute;
+                top:10px;
+                left:50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                background:white;
+                border-radius: 5px;
+                justify-items: center;
+                height:30px;
+                font-size:14px;
+                .hover-editor-name{
+                    position: absolute;
+                    left:10px;
+                    z-index: 3;
+                }
+                .hover-editor-text{
+                    position: absolute;
+                    right:10px;
+                    z-index: 3;
+                }
+                .hover-editor-downOutIcon{
+                    position: absolute;
+                    top:8px;
+                    right:48px;
+                    z-index: 3;
+
+                }
+                //margin:10px auto;
+                //display: flex;
+                //flex-direction: row;
+
+            }
+            .hover-editor-footer{
+                width:90%;
+                position: absolute;
+                bottom:10px;
+                left:50%;
+                transform: translateX(-50%);
+                .can-edit-name{
+                    position: absolute;
+                    right:8px;
+                    top:9px;
+                    bottom:15px;
+                    z-index: 3;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+
+}

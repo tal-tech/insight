@@ -1,0 +1,41 @@
+.backIcon{
+    cursor: pointer;
+}
+
+.detail-page-name{
+    margin: 0 auto;
+    .detail-page-name-text{
+        font-size:24px;
+        font-weight: bolder;
+    }
+    .editIcon{
+        margin-left:10px;
+        cursor: pointer;
+    }
+}
+.detail-page-name-can-edit{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .can-edit-name{
+        margin-left:10px;
+    }
+}
+.page-version{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:40px;
+    font-size:12px;
+    background:#F8F8F8;
+    border-radius: 20px;
+    padding:3px 15px;
+    &.has-data {
+        cursor: pointer;
+    }
+
+    .page-version-icon{
+        margin-right:10px;
+    }
+}

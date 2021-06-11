@@ -1,0 +1,16 @@
+PODS:
+  - XHBEventTracker (0.1.1)
+
+DEPENDENCIES:
+  - XHBEventTracker (from `../`)
+
+EXTERNAL SOURCES:
+  XHBEventTracker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XHBEventTracker: 518a312d94d2db3dc2a6ce718f9f67f07765b2a4
+
+PODFILE CHECKSUM: 99f60c5e6008de83782c73599c2115205ef5d5ec
+
+COCOAPODS: 1.9.2

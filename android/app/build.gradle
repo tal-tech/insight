@@ -1,0 +1,152 @@
+import com.android.build.gradle.internal.scope.GlobalScope
+import com.android.build.gradle.internal.variant.BaseVariantData
+import com.google.common.base.Joiner
+
+import static com.android.builder.model.AndroidProject.FD_OUTPUTS
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.xhb.hunter.event.demo"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+def copyApk(File sourceDir, File destFile) {
+    File sourceFile = null
+    if (sourceDir.isDirectory()) {
+        def files = sourceDir.listFiles()
+        for (File file : files) {
+            println "apk==>${file.getAbsolutePath()}"
+            if (file.getAbsolutePath().endsWith(".apk")) {
+                sourceFile = file
+                break
+            }
+        }
+    }
+
+    if (sourceFile == null) {
+        return
+    }
+
+    def input = null
+    def output = null
+    try {
+        input = new FileInputStream(sourceFile)
+        output = new FileOutputStream(destFile)
+        byte[] buf = new byte[1024]
+        int bytesRead
+        while ((bytesRead = input.read(buf)) > 0) {
+            output.write(buf, 0, bytesRead)
+        }
+    } catch (Exception e) {
+        e.printStackTrace()
+    } finally {
+        if (input != null) {
+            input.close()
+        }
+
+        if (output != null) {
+            output.close()
+        }
+    }
+}
+
+def injectMoveApkTask(Task task, buildType) {
+    task.doLast("moveApk${buildType.capitalize()}") {
+        println "do moveApk"
+
+        def apkDir = new File("${project.rootDir}/profiles", "apk")
+        // copy buildType apk
+        def buildTypeUnSignedDir = new File("${project.getBuildDir().getAbsolutePath()}/outputs/apk", buildType)
+        copyApk(buildTypeUnSignedDir, new File(apkDir, "app-no-sign-${buildType}.apk"))
+
+        def signedDir = new File("${project.getProjectDir()}/${buildType}")
+        copyApk(buildTypeUnSignedDir, new File(apkDir, "app-no-sign-${buildType}.apk"))
+        copyApk(signedDir, new File(apkDir, "app-signed-${buildType}.apk"))
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'assembleDebug') {
+        injectMoveApkTask(task, 'debug')
+    } else if (task.name == 'assembleRelease') {
+        injectMoveApkTask(task, 'release')
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation project(':hunter-event-library')
+    implementation project(':ok-hunter-event-impl')
+//    implementation 'com.xhb.component.hunter:hunter-event-library:1.1.0'
+    implementation "androidx.core:core-ktx:1.5.0-alpha02"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+// useless ; just print info,mock tx matrix-android
+project.afterEvaluate {
+    android.applicationVariants.all { variant ->
+
+        def variantScope = variant.getVariantData().getScope()
+        GlobalScope globalScope = variantScope.getGlobalScope()
+        BaseVariantData variantData = variantScope.getVariantData()
+        def variantConfiguration = variantScope.getVariantConfiguration()
+
+        String mappingOut = Joiner.on(File.separatorChar).join(
+                String.valueOf(globalScope.getBuildDir()),
+                FD_OUTPUTS,
+                "mapping",
+                variantScope.getVariantConfiguration().getDirName())
+
+        def builder = new StringBuilder()
+        builder
+        // /Users/yangjianfei/myWidget/android/xhb-components/hunter-event/app/build/outputs/mapping/debug
+                .append("mapping:").append(mappingOut).append("\n")
+
+        println "afterEvaluate applicationVariants.all :\n${builder.toString()}"
+    }
+}
+
+apply plugin: 'hunter-event'
+
+eventHunterExt {
+    runVariant = 'ALWAYS'
+    whitelist = ['com.xhb.hunter', 'androidx.core.app']
+    blacklist = ['com.xhb.hunter.ok.impl']
+
+    trace {
+        enable = true
+        outPath = "${projectDir.getAbsolutePath()}/trace/trace.txt"
+    }
+}
+repositories {
+    mavenCentral()
+}

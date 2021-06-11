@@ -1,0 +1,6 @@
+framework module Pods_XHBEventTracker_Example {
+  umbrella header "Pods-XHBEventTracker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "XHBEventTracker",
+  "version": "0.1.1",
+  "summary": "晓黑板埋点",
+  "description": "晓黑板无痕埋点工具",
+  "homepage": "",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "李洋超": ""
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XHBEventTracker/Classes/**/*",
+  "public_header_files": [
+    "XHBEventTracker/Classes/**/Tracker.h",
+    "XHBEventTracker/Classes/**/EventTracker.h",
+    "XHBEventTracker/Classes/**/UIBarItem+Hook.h",
+    "XHBEventTracker/Classes/**/UIView+Hook.h"
+  ]
+}

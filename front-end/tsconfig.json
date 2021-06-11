@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "declaration": true,
+    "importHelpers": true,
+    "lib": [
+      "ES5",
+      "esnext",
+      "DOM"
+    ],
+    "target": "es5",
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src",
+    "typings.d.ts",
+  ],
+  "bazelOptions": {
+    "suppressTsconfigOverrideWarnings": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**/*",
+    "**/lib/**/*",
+    "**/build/**/*",
+    "**/dist/**/*",
+    "**/*.spec*"
+  ]
+}

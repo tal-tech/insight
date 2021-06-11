@@ -1,0 +1,17 @@
+<resources>
+    <string name="tracker_title">晓提示</string>
+    <string name="tracker_is_copy">是否复制该按钮\n[%s]\n点击信息？</string>
+    <string name="tracker_copy">点击复制</string>
+    <string name="tracker_cancel">取消</string>
+    <string name="tracker_copy_successful">已复制到剪贴板</string>
+    <string name="tracker_component_name_null">组件名称为空</string>
+    <string name="tracker_submit">上传映射</string>
+    <string name="tracker_map_name">名称: </string>
+    <string name="tracker_stop_action">拦截操作</string>
+    <string name="tracker_disable_input">停止输入</string>
+    <string name="tracker_page_info">页面信息</string>
+    <string name="tracker_item_info">元素信息</string>
+    <string name="toggle_small">变小</string>
+    <string name="tracker_upload">可视化上传</string>
+    <string name="tracker_close">关闭插桩弹窗</string>
+</resources>

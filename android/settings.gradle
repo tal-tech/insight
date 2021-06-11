@@ -1,0 +1,4 @@
+include ':ok-hunter-event-impl'
+include ':app', ':hunter-event-library'
+include ':hunter-event-plugin'
+rootProject.name='hunter-event'

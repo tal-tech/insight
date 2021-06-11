@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xhb.hunter.ok.impl">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+        <activity
+            android:name=".support.OverLaySettingActivity"
+            android:theme="@style/PermissionNoDisplay" />
+        <service android:name=".support.FloatingViewService" />
+    </application>
+</manifest>

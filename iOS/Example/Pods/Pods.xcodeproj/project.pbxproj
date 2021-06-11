@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0139DC9690FED9F2DBBEA5A0C003D029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0F5F4000BB8232D70FDCDB1B53B9B66D /* EventTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E95BAB2C2EA47991DF900BE4F0B601 /* EventTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113662F5100C9DDECBE15C67FAE00360 /* SADelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E42B8F114C8622B41E1059DA230589 /* SADelegateProxy.m */; };
+		18B76D0FB8FA6816BE3B3FD094ADEBDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2333E3AB081A5C3C6982F435146DC888 /* TrackerDisplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 72037C9DF1CCEDE6D5A042BB0145D660 /* TrackerDisplayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28AE7E71728D43F65088A2ECB5341B1F /* UITableView+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD984172307050F60F79E3FF4B349B6 /* UITableView+Hook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BB3FB3A750300CF8FBAAC0B63FA4A6C /* XHBEventTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11CB0F129F1D8490E9CB1335B98CF5FD /* XHBEventTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D4432B9703D7B0CF6F6D3AF85DECEEF /* NSObject+DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA8C75B32EE21E840EC72261854B4F /* NSObject+DelegateProxy.m */; };
+		2FF24A337E9E920822C4D34F5A1F300B /* SAScrollViewDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFE95F3939CF506571BF0C28B06EDCA /* SAScrollViewDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37113ECDCB7E7B14EDB053D3A1AAB25A /* SAMethodHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9506AE33B67B11CB289FB384E59CB7C6 /* SAMethodHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37BEDC5D63E4719B0CCDE552965207F1 /* UIApplication+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FED877979213A0A48DE55A85FE1D3F /* UIApplication+Hook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3926C237E19237EB94CE40EA83C89B32 /* XHBEventTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FDC321C683897B3966C8E136959462 /* XHBEventTracker-dummy.m */; };
+		3969199671788194F58E6058D5C0D0D7 /* SADelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A62359EF1595A985E2CC69BC8D1808 /* SADelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DB6EB3C7C5D9C1CD8C19DA30418A872 /* UICollectionView+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C976E9AC9E44E06387ED5211552012DC /* UICollectionView+Hook.m */; };
+		45B45AD94820F059B372233B5EFAD4DD /* Pods-XHBEventTracker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C605FA4C5AB1A9A5EF3D84404C3060BC /* Pods-XHBEventTracker_Example-dummy.m */; };
+		4855B989A015372AF0FFD30C3DC42FA0 /* TrackerHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38D84DE954F4C64B82DC0BDCC203F1 /* TrackerHelp.m */; };
+		5B31BAA7470CA7DD49B6FC74C7E50802 /* UIGestureRecognizer+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B901D923040E217404A21BE461A865 /* UIGestureRecognizer+Hook.m */; };
+		5E8CE3281F7283C0CB2363696C264F73 /* UIBarItem+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E732C2472B86EC2FBBCF100DA4FEB /* UIBarItem+Hook.m */; };
+		657A9ECF147224FBCA35F15218EB78BE /* UIApplication+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F90C0B46ABA5CBB11709DE46C3F5E5 /* UIApplication+Hook.m */; };
+		69EE377B87A0A84DB5054306156B13C9 /* UIBarItem+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0225380D3B7DCBF9BAF38E7E4C2FCAB8 /* UIBarItem+Hook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBE547DD2AC6BAE37DF384800162844 /* Pods-XHBEventTracker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C188002A1ABFB788A6EBE5ED27A727 /* Pods-XHBEventTracker_Tests-dummy.m */; };
+		7994AA58D5BD787B8A4C91C86650F6AA /* Pods-XHBEventTracker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AE44E3CF655B22FCCBF7350FCBCA07 /* Pods-XHBEventTracker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E85050937DA1A6E8EB3E7802B36270B /* SAClassHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 331523867DC61D7895CB1BD04BA0A52B /* SAClassHelper.m */; };
+		886D59F8602DA68AB2AD582525D0ECAC /* UIViewController+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B90A30F0832A30A61F334C1B0F9E18 /* UIViewController+Hook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9464253173FAC2AA56B54C185A605091 /* Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CD1E22449C246A9F427032B0F327B3 /* Tracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98E2C8914D7A5AD2A9420139F0BAACCC /* SAClassHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAECFCA067C4F28152EFA94834FA562 /* SAClassHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A14F9F763580DC546B28997F4CC4BFFD /* Pods-XHBEventTracker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FB317FC71FCE7466667F4039162EDE /* Pods-XHBEventTracker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A242A3535D8076D971710B3EEE275D84 /* UIViewController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF6B466332A699F633406C08153A08A /* UIViewController+Hook.m */; };
+		A3041E3BD11FC1E816C45E3E56941423 /* SAMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2FCD1D306B1FB11472A2B4EC0BB0 /* SAMethodHelper.m */; };
+		A307EC5938B6A1FF3654545BC615DC43 /* UIView+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC59EEECA016E929F081317F034F185 /* UIView+Hook.m */; };
+		BC74060A21458A89BE44F5A234B0D2DC /* TrackerDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0DF3CF4002DD0E80771DE6C95D3F51 /* TrackerDisplayView.m */; };
+		C1E6B69E3C7C56766513AFECD1C78B06 /* UITableView+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4573299CCE3ED0ABFFAD6A54A4B25A /* UITableView+Hook.m */; };
+		D829148DDF6CA0FFAD3C1E37A4BC34FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D9D445CD84F96C0BA5E72D82CBF2D21F /* EventTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CD221F81D6C437DBC7758EEBBE91609C /* EventTracker.m */; };
+		E6EBC31332BDD9B6EA745B126CC6C404 /* SAScrollViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F7582DE781CC47729AC1B0EF0A359 /* SAScrollViewDelegateProxy.m */; };
+		E76D1927C4FCE8DC37E41ACAABF20173 /* UIGestureRecognizer+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = D68AA4EEF865528B7C4E3A6FE98FB7EF /* UIGestureRecognizer+Hook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E894F1E74B9405357A4F9914DE2F4F4A /* UIView+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F38059216D271E82A7C49B7910DED3D /* UIView+Hook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA9612C8D78CE5B7D83B2817F1A104EF /* TrackerHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB8E49F35E80FD014A47CC870008DAC /* TrackerHelp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F44B0E5AE13C7380D79C5BC633C8E1AE /* NSObject+DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 11500147A2E6F47DE5C215122DC6019B /* NSObject+DelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFAA43AFAC1798C1D0BB5CE1080F4645 /* UICollectionView+Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F2DA14000F192A77806C6599ADE953 /* UICollectionView+Hook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CF9F2CAD36DA99CAC41726C88B80A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E0FC05C74080E7445AF0BBC9CCE8DD;
+			remoteInfo = XHBEventTracker;
+		};
+		2818D947ACC92CA1E98810176089DD14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EBF562A39FD2346AF1B789E1B7249AF;
+			remoteInfo = "Pods-XHBEventTracker_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C188002A1ABFB788A6EBE5ED27A727 /* Pods-XHBEventTracker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XHBEventTracker_Tests-dummy.m"; sourceTree = "<group>"; };
+		0225380D3B7DCBF9BAF38E7E4C2FCAB8 /* UIBarItem+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarItem+Hook.h"; path = "XHBEventTracker/Classes/UIBarItem+Hook.h"; sourceTree = "<group>"; };
+		091EC6A180C43B261EF11D154B712B83 /* XHBEventTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XHBEventTracker.debug.xcconfig; sourceTree = "<group>"; };
+		0F38059216D271E82A7C49B7910DED3D /* UIView+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Hook.h"; path = "XHBEventTracker/Classes/UIView+Hook.h"; sourceTree = "<group>"; };
+		11500147A2E6F47DE5C215122DC6019B /* NSObject+DelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+DelegateProxy.h"; sourceTree = "<group>"; };
+		11CB0F129F1D8490E9CB1335B98CF5FD /* XHBEventTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XHBEventTracker-umbrella.h"; sourceTree = "<group>"; };
+		147ACE7BCEB7F1CA18460D65678B8D7B /* XHBEventTracker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XHBEventTracker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1AAB6B1195E718D5888EB467D89FC074 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22AE44E3CF655B22FCCBF7350FCBCA07 /* Pods-XHBEventTracker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XHBEventTracker_Example-umbrella.h"; sourceTree = "<group>"; };
+		24F1C40D327D7681C52CB9BAA70F8681 /* Pods-XHBEventTracker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHBEventTracker_Tests-Info.plist"; sourceTree = "<group>"; };
+		262A68EE61C5913B80A586F81B16F834 /* Pods-XHBEventTracker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHBEventTracker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		28AB325AB47CD2633B508E04E8014D98 /* XHBEventTracker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XHBEventTracker-Info.plist"; sourceTree = "<group>"; };
+		2CFE95F3939CF506571BF0C28B06EDCA /* SAScrollViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAScrollViewDelegateProxy.h; sourceTree = "<group>"; };
+		31A62359EF1595A985E2CC69BC8D1808 /* SADelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SADelegateProxy.h; sourceTree = "<group>"; };
+		331523867DC61D7895CB1BD04BA0A52B /* SAClassHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAClassHelper.m; sourceTree = "<group>"; };
+		37FED877979213A0A48DE55A85FE1D3F /* UIApplication+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Hook.h"; path = "XHBEventTracker/Classes/UIApplication+Hook.h"; sourceTree = "<group>"; };
+		3AC86FC8BB3CD6B736794E51C492728B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D91AA7C2502E35B7C80ED19CD43A58F /* Pods-XHBEventTracker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XHBEventTracker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45CD1E22449C246A9F427032B0F327B3 /* Tracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = XHBEventTracker/Classes/Tracker.h; sourceTree = "<group>"; };
+		492C61E61BC03458D0A18C6941EB86BE /* XHBEventTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XHBEventTracker.release.xcconfig; sourceTree = "<group>"; };
+		5319B3A1D9C9372F6EFAED9CF02032F7 /* Pods_XHBEventTracker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHBEventTracker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B901D923040E217404A21BE461A865 /* UIGestureRecognizer+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+Hook.m"; path = "XHBEventTracker/Classes/UIGestureRecognizer+Hook.m"; sourceTree = "<group>"; };
+		5C38D84DE954F4C64B82DC0BDCC203F1 /* TrackerHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TrackerHelp.m; path = XHBEventTracker/Classes/TrackerHelp.m; sourceTree = "<group>"; };
+		6AB8E49F35E80FD014A47CC870008DAC /* TrackerHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TrackerHelp.h; path = XHBEventTracker/Classes/TrackerHelp.h; sourceTree = "<group>"; };
+		6C3F7582DE781CC47729AC1B0EF0A359 /* SAScrollViewDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAScrollViewDelegateProxy.m; sourceTree = "<group>"; };
+		6DAA8C75B32EE21E840EC72261854B4F /* NSObject+DelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DelegateProxy.m"; sourceTree = "<group>"; };
+		72037C9DF1CCEDE6D5A042BB0145D660 /* TrackerDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TrackerDisplayView.h; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		766E732C2472B86EC2FBBCF100DA4FEB /* UIBarItem+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarItem+Hook.m"; path = "XHBEventTracker/Classes/UIBarItem+Hook.m"; sourceTree = "<group>"; };
+		870D95FC72BD7881B241DEA71846F4EB /* XHBEventTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XHBEventTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4573299CCE3ED0ABFFAD6A54A4B25A /* UITableView+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Hook.m"; path = "XHBEventTracker/Classes/UITableView+Hook.m"; sourceTree = "<group>"; };
+		8F0CE4691BF671475E720324267CA3BC /* Pods_XHBEventTracker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHBEventTracker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DFCE152D9D73B6AB498C08AE708D30 /* XHBEventTracker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XHBEventTracker-prefix.pch"; sourceTree = "<group>"; };
+		9506AE33B67B11CB289FB384E59CB7C6 /* SAMethodHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAMethodHelper.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0FDC321C683897B3966C8E136959462 /* XHBEventTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XHBEventTracker-dummy.m"; sourceTree = "<group>"; };
+		A5DD2FCD1D306B1FB11472A2B4EC0BB0 /* SAMethodHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAMethodHelper.m; sourceTree = "<group>"; };
+		A6F2DA14000F192A77806C6599ADE953 /* UICollectionView+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+Hook.h"; path = "XHBEventTracker/Classes/UICollectionView+Hook.h"; sourceTree = "<group>"; };
+		A77F047E8D0559B323D42ED5C081D9F8 /* Pods-XHBEventTracker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHBEventTracker_Example-Info.plist"; sourceTree = "<group>"; };
+		A7FB317FC71FCE7466667F4039162EDE /* Pods-XHBEventTracker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XHBEventTracker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A9F90C0B46ABA5CBB11709DE46C3F5E5 /* UIApplication+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Hook.m"; path = "XHBEventTracker/Classes/UIApplication+Hook.m"; sourceTree = "<group>"; };
+		ACD984172307050F60F79E3FF4B349B6 /* UITableView+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+Hook.h"; path = "XHBEventTracker/Classes/UITableView+Hook.h"; sourceTree = "<group>"; };
+		B34052E33946CBB9B77CF6A38C728F60 /* Pods-XHBEventTracker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHBEventTracker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B4B90A30F0832A30A61F334C1B0F9E18 /* UIViewController+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Hook.h"; path = "XHBEventTracker/Classes/UIViewController+Hook.h"; sourceTree = "<group>"; };
+		BA0DF3CF4002DD0E80771DE6C95D3F51 /* TrackerDisplayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TrackerDisplayView.m; sourceTree = "<group>"; };
+		BAE6485CBA4ABF2C3104D67DE2824E15 /* XHBEventTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XHBEventTracker.modulemap; sourceTree = "<group>"; };
+		BAF6B466332A699F633406C08153A08A /* UIViewController+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Hook.m"; path = "XHBEventTracker/Classes/UIViewController+Hook.m"; sourceTree = "<group>"; };
+		C4DEA80E54B129CE06F1444866368F08 /* Pods-XHBEventTracker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHBEventTracker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C605FA4C5AB1A9A5EF3D84404C3060BC /* Pods-XHBEventTracker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XHBEventTracker_Example-dummy.m"; sourceTree = "<group>"; };
+		C6E42B8F114C8622B41E1059DA230589 /* SADelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SADelegateProxy.m; sourceTree = "<group>"; };
+		C976E9AC9E44E06387ED5211552012DC /* UICollectionView+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+Hook.m"; path = "XHBEventTracker/Classes/UICollectionView+Hook.m"; sourceTree = "<group>"; };
+		CBC59EEECA016E929F081317F034F185 /* UIView+Hook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Hook.m"; path = "XHBEventTracker/Classes/UIView+Hook.m"; sourceTree = "<group>"; };
+		CD221F81D6C437DBC7758EEBBE91609C /* EventTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventTracker.m; path = XHBEventTracker/Classes/EventTracker.m; sourceTree = "<group>"; };
+		CDAECFCA067C4F28152EFA94834FA562 /* SAClassHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAClassHelper.h; sourceTree = "<group>"; };
+		D68AA4EEF865528B7C4E3A6FE98FB7EF /* UIGestureRecognizer+Hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+Hook.h"; path = "XHBEventTracker/Classes/UIGestureRecognizer+Hook.h"; sourceTree = "<group>"; };
+		D76C00946E97731490DBC26E72CABFCC /* Pods-XHBEventTracker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XHBEventTracker_Tests.modulemap"; sourceTree = "<group>"; };
+		DAF556875229C338FD79FCCC9FC68273 /* Pods-XHBEventTracker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XHBEventTracker_Example.modulemap"; sourceTree = "<group>"; };
+		DEAEFFBE4F8077D7BAC8070D6311DA4F /* Pods-XHBEventTracker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHBEventTracker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E2190A676E34A79737DE8C25BF1C3BC1 /* Pods-XHBEventTracker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XHBEventTracker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6E95BAB2C2EA47991DF900BE4F0B601 /* EventTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventTracker.h; path = XHBEventTracker/Classes/EventTracker.h; sourceTree = "<group>"; };
+		E709F57EFD44DA54A3F2DD4FC8E8E8E0 /* Pods-XHBEventTracker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHBEventTracker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F548400CA562E95663D0ACC7B0E958E9 /* Pods-XHBEventTracker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XHBEventTracker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F8ABD25519073BEC809E776FB83FB526 /* Pods-XHBEventTracker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XHBEventTracker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		469ED800DB4EE192E7557CBFAAAECA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B76D0FB8FA6816BE3B3FD094ADEBDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9EA25DD3B34F771DCBA4F4B4C92B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0139DC9690FED9F2DBBEA5A0C003D029 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C718577A141A1F093F884C5D5110546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D829148DDF6CA0FFAD3C1E37A4BC34FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38839CEEF59063C1729DD82C89610553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5319B3A1D9C9372F6EFAED9CF02032F7 /* Pods_XHBEventTracker_Example.framework */,
+				8F0CE4691BF671475E720324267CA3BC /* Pods_XHBEventTracker_Tests.framework */,
+				870D95FC72BD7881B241DEA71846F4EB /* XHBEventTracker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5329D7751601242B510F1328F93FB540 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1AAB6B1195E718D5888EB467D89FC074 /* LICENSE */,
+				3AC86FC8BB3CD6B736794E51C492728B /* README.md */,
+				147ACE7BCEB7F1CA18460D65678B8D7B /* XHBEventTracker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A9AB32493AFE92A123C8A1A054CFB233 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA4CFEBBDEE3D4E05A395E5833FAA38C /* XHBEventTracker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AE98087A657070A9AB24E9D5171148CD /* HookDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				11500147A2E6F47DE5C215122DC6019B /* NSObject+DelegateProxy.h */,
+				6DAA8C75B32EE21E840EC72261854B4F /* NSObject+DelegateProxy.m */,
+				CDAECFCA067C4F28152EFA94834FA562 /* SAClassHelper.h */,
+				331523867DC61D7895CB1BD04BA0A52B /* SAClassHelper.m */,
+				31A62359EF1595A985E2CC69BC8D1808 /* SADelegateProxy.h */,
+				C6E42B8F114C8622B41E1059DA230589 /* SADelegateProxy.m */,
+				9506AE33B67B11CB289FB384E59CB7C6 /* SAMethodHelper.h */,
+				A5DD2FCD1D306B1FB11472A2B4EC0BB0 /* SAMethodHelper.m */,
+				2CFE95F3939CF506571BF0C28B06EDCA /* SAScrollViewDelegateProxy.h */,
+				6C3F7582DE781CC47729AC1B0EF0A359 /* SAScrollViewDelegateProxy.m */,
+			);
+			name = HookDelegate;
+			path = XHBEventTracker/Classes/HookDelegate;
+			sourceTree = "<group>";
+		};
+		B514FE1AC4ACF4E40BC0031D3CC712B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E52C0C608E32376BDFFC87674E8BDAFC /* Pods-XHBEventTracker_Example */,
+				E3F18FDE604D670FDB814E1761E58C07 /* Pods-XHBEventTracker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C52EEEECEE98485FA2A1A917F0D260B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAE6485CBA4ABF2C3104D67DE2824E15 /* XHBEventTracker.modulemap */,
+				A0FDC321C683897B3966C8E136959462 /* XHBEventTracker-dummy.m */,
+				28AB325AB47CD2633B508E04E8014D98 /* XHBEventTracker-Info.plist */,
+				92DFCE152D9D73B6AB498C08AE708D30 /* XHBEventTracker-prefix.pch */,
+				11CB0F129F1D8490E9CB1335B98CF5FD /* XHBEventTracker-umbrella.h */,
+				091EC6A180C43B261EF11D154B712B83 /* XHBEventTracker.debug.xcconfig */,
+				492C61E61BC03458D0A18C6941EB86BE /* XHBEventTracker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XHBEventTracker";
+			sourceTree = "<group>";
+		};
+		C62703902646921D00D5E2A2 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				72037C9DF1CCEDE6D5A042BB0145D660 /* TrackerDisplayView.h */,
+				BA0DF3CF4002DD0E80771DE6C95D3F51 /* TrackerDisplayView.m */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		CA4CFEBBDEE3D4E05A395E5833FAA38C /* XHBEventTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C62703902646921D00D5E2A2 /* Display */,
+				E6E95BAB2C2EA47991DF900BE4F0B601 /* EventTracker.h */,
+				CD221F81D6C437DBC7758EEBBE91609C /* EventTracker.m */,
+				AE98087A657070A9AB24E9D5171148CD /* HookDelegate */,
+				5329D7751601242B510F1328F93FB540 /* Pod */,
+				C52EEEECEE98485FA2A1A917F0D260B1 /* Support Files */,
+				45CD1E22449C246A9F427032B0F327B3 /* Tracker.h */,
+				6AB8E49F35E80FD014A47CC870008DAC /* TrackerHelp.h */,
+				5C38D84DE954F4C64B82DC0BDCC203F1 /* TrackerHelp.m */,
+				37FED877979213A0A48DE55A85FE1D3F /* UIApplication+Hook.h */,
+				A9F90C0B46ABA5CBB11709DE46C3F5E5 /* UIApplication+Hook.m */,
+				0225380D3B7DCBF9BAF38E7E4C2FCAB8 /* UIBarItem+Hook.h */,
+				766E732C2472B86EC2FBBCF100DA4FEB /* UIBarItem+Hook.m */,
+				A6F2DA14000F192A77806C6599ADE953 /* UICollectionView+Hook.h */,
+				C976E9AC9E44E06387ED5211552012DC /* UICollectionView+Hook.m */,
+				D68AA4EEF865528B7C4E3A6FE98FB7EF /* UIGestureRecognizer+Hook.h */,
+				58B901D923040E217404A21BE461A865 /* UIGestureRecognizer+Hook.m */,
+				ACD984172307050F60F79E3FF4B349B6 /* UITableView+Hook.h */,
+				8E4573299CCE3ED0ABFFAD6A54A4B25A /* UITableView+Hook.m */,
+				0F38059216D271E82A7C49B7910DED3D /* UIView+Hook.h */,
+				CBC59EEECA016E929F081317F034F185 /* UIView+Hook.m */,
+				B4B90A30F0832A30A61F334C1B0F9E18 /* UIViewController+Hook.h */,
+				BAF6B466332A699F633406C08153A08A /* UIViewController+Hook.m */,
+			);
+			name = XHBEventTracker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A9AB32493AFE92A123C8A1A054CFB233 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				38839CEEF59063C1729DD82C89610553 /* Products */,
+				B514FE1AC4ACF4E40BC0031D3CC712B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3F18FDE604D670FDB814E1761E58C07 /* Pods-XHBEventTracker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D76C00946E97731490DBC26E72CABFCC /* Pods-XHBEventTracker_Tests.modulemap */,
+				F8ABD25519073BEC809E776FB83FB526 /* Pods-XHBEventTracker_Tests-acknowledgements.markdown */,
+				262A68EE61C5913B80A586F81B16F834 /* Pods-XHBEventTracker_Tests-acknowledgements.plist */,
+				01C188002A1ABFB788A6EBE5ED27A727 /* Pods-XHBEventTracker_Tests-dummy.m */,
+				24F1C40D327D7681C52CB9BAA70F8681 /* Pods-XHBEventTracker_Tests-Info.plist */,
+				A7FB317FC71FCE7466667F4039162EDE /* Pods-XHBEventTracker_Tests-umbrella.h */,
+				E709F57EFD44DA54A3F2DD4FC8E8E8E0 /* Pods-XHBEventTracker_Tests.debug.xcconfig */,
+				C4DEA80E54B129CE06F1444866368F08 /* Pods-XHBEventTracker_Tests.release.xcconfig */,
+			);
+			name = "Pods-XHBEventTracker_Tests";
+			path = "Target Support Files/Pods-XHBEventTracker_Tests";
+			sourceTree = "<group>";
+		};
+		E52C0C608E32376BDFFC87674E8BDAFC /* Pods-XHBEventTracker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DAF556875229C338FD79FCCC9FC68273 /* Pods-XHBEventTracker_Example.modulemap */,
+				3D91AA7C2502E35B7C80ED19CD43A58F /* Pods-XHBEventTracker_Example-acknowledgements.markdown */,
+				E2190A676E34A79737DE8C25BF1C3BC1 /* Pods-XHBEventTracker_Example-acknowledgements.plist */,
+				C605FA4C5AB1A9A5EF3D84404C3060BC /* Pods-XHBEventTracker_Example-dummy.m */,
+				DEAEFFBE4F8077D7BAC8070D6311DA4F /* Pods-XHBEventTracker_Example-frameworks.sh */,
+				A77F047E8D0559B323D42ED5C081D9F8 /* Pods-XHBEventTracker_Example-Info.plist */,
+				22AE44E3CF655B22FCCBF7350FCBCA07 /* Pods-XHBEventTracker_Example-umbrella.h */,
+				F548400CA562E95663D0ACC7B0E958E9 /* Pods-XHBEventTracker_Example.debug.xcconfig */,
+				B34052E33946CBB9B77CF6A38C728F60 /* Pods-XHBEventTracker_Example.release.xcconfig */,
+			);
+			name = "Pods-XHBEventTracker_Example";
+			path = "Target Support Files/Pods-XHBEventTracker_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		567577B43DF6B061D4C7FA29F0FC4670 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9F763580DC546B28997F4CC4BFFD /* Pods-XHBEventTracker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B42ABCD3080B6C29CE90B07618841F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7994AA58D5BD787B8A4C91C86650F6AA /* Pods-XHBEventTracker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD761DEF545E6E40B2DC57DC46BCC311 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5F4000BB8232D70FDCDB1B53B9B66D /* EventTracker.h in Headers */,
+				F44B0E5AE13C7380D79C5BC633C8E1AE /* NSObject+DelegateProxy.h in Headers */,
+				98E2C8914D7A5AD2A9420139F0BAACCC /* SAClassHelper.h in Headers */,
+				3969199671788194F58E6058D5C0D0D7 /* SADelegateProxy.h in Headers */,
+				37113ECDCB7E7B14EDB053D3A1AAB25A /* SAMethodHelper.h in Headers */,
+				2FF24A337E9E920822C4D34F5A1F300B /* SAScrollViewDelegateProxy.h in Headers */,
+				9464253173FAC2AA56B54C185A605091 /* Tracker.h in Headers */,
+				2333E3AB081A5C3C6982F435146DC888 /* TrackerDisplayView.h in Headers */,
+				EA9612C8D78CE5B7D83B2817F1A104EF /* TrackerHelp.h in Headers */,
+				37BEDC5D63E4719B0CCDE552965207F1 /* UIApplication+Hook.h in Headers */,
+				69EE377B87A0A84DB5054306156B13C9 /* UIBarItem+Hook.h in Headers */,
+				FFAA43AFAC1798C1D0BB5CE1080F4645 /* UICollectionView+Hook.h in Headers */,
+				E76D1927C4FCE8DC37E41ACAABF20173 /* UIGestureRecognizer+Hook.h in Headers */,
+				28AE7E71728D43F65088A2ECB5341B1F /* UITableView+Hook.h in Headers */,
+				E894F1E74B9405357A4F9914DE2F4F4A /* UIView+Hook.h in Headers */,
+				886D59F8602DA68AB2AD582525D0ECAC /* UIViewController+Hook.h in Headers */,
+				2BB3FB3A750300CF8FBAAC0B63FA4A6C /* XHBEventTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32E0FC05C74080E7445AF0BBC9CCE8DD /* XHBEventTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD837CBE730E98FACB841E5E0497E7C2 /* Build configuration list for PBXNativeTarget "XHBEventTracker" */;
+			buildPhases = (
+				DD761DEF545E6E40B2DC57DC46BCC311 /* Headers */,
+				9CF0E617D3F25A456EAA3E0554335513 /* Sources */,
+				469ED800DB4EE192E7557CBFAAAECA09 /* Frameworks */,
+				F4212DA40FEA7E0AEAB43E4BAF7E1AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XHBEventTracker;
+			productName = XHBEventTracker;
+			productReference = 870D95FC72BD7881B241DEA71846F4EB /* XHBEventTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EBF562A39FD2346AF1B789E1B7249AF /* Pods-XHBEventTracker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4D5D364F3759A29D2F071B0E5BF118 /* Build configuration list for PBXNativeTarget "Pods-XHBEventTracker_Example" */;
+			buildPhases = (
+				6B42ABCD3080B6C29CE90B07618841F4 /* Headers */,
+				D157CE0E3817DE974D4D6F80859AEA4C /* Sources */,
+				9C718577A141A1F093F884C5D5110546 /* Frameworks */,
+				AEC5DC8FD00AED9363D90C67C623696F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB6DFEFDF252908F4F9E8EA138BA2B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-XHBEventTracker_Example";
+			productName = "Pods-XHBEventTracker_Example";
+			productReference = 5319B3A1D9C9372F6EFAED9CF02032F7 /* Pods_XHBEventTracker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB3F982760AF2CE597A9EDD6F9818F6F /* Pods-XHBEventTracker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F80C8F9C89B2C046C8535FEE6A234E /* Build configuration list for PBXNativeTarget "Pods-XHBEventTracker_Tests" */;
+			buildPhases = (
+				567577B43DF6B061D4C7FA29F0FC4670 /* Headers */,
+				DB63BD5E2FBB58507B02CBC77E9D0913 /* Sources */,
+				8F9EA25DD3B34F771DCBA4F4B4C92B04 /* Frameworks */,
+				326A87245CD4B4A3B1818B0234D22253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6EF418D9D7D1B4DEFD8781F0332E6B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-XHBEventTracker_Tests";
+			productName = "Pods-XHBEventTracker_Tests";
+			productReference = 8F0CE4691BF671475E720324267CA3BC /* Pods_XHBEventTracker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 38839CEEF59063C1729DD82C89610553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EBF562A39FD2346AF1B789E1B7249AF /* Pods-XHBEventTracker_Example */,
+				FB3F982760AF2CE597A9EDD6F9818F6F /* Pods-XHBEventTracker_Tests */,
+				32E0FC05C74080E7445AF0BBC9CCE8DD /* XHBEventTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		326A87245CD4B4A3B1818B0234D22253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC5DC8FD00AED9363D90C67C623696F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4212DA40FEA7E0AEAB43E4BAF7E1AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF0E617D3F25A456EAA3E0554335513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D445CD84F96C0BA5E72D82CBF2D21F /* EventTracker.m in Sources */,
+				2D4432B9703D7B0CF6F6D3AF85DECEEF /* NSObject+DelegateProxy.m in Sources */,
+				7E85050937DA1A6E8EB3E7802B36270B /* SAClassHelper.m in Sources */,
+				113662F5100C9DDECBE15C67FAE00360 /* SADelegateProxy.m in Sources */,
+				A3041E3BD11FC1E816C45E3E56941423 /* SAMethodHelper.m in Sources */,
+				E6EBC31332BDD9B6EA745B126CC6C404 /* SAScrollViewDelegateProxy.m in Sources */,
+				BC74060A21458A89BE44F5A234B0D2DC /* TrackerDisplayView.m in Sources */,
+				4855B989A015372AF0FFD30C3DC42FA0 /* TrackerHelp.m in Sources */,
+				657A9ECF147224FBCA35F15218EB78BE /* UIApplication+Hook.m in Sources */,
+				5E8CE3281F7283C0CB2363696C264F73 /* UIBarItem+Hook.m in Sources */,
+				3DB6EB3C7C5D9C1CD8C19DA30418A872 /* UICollectionView+Hook.m in Sources */,
+				5B31BAA7470CA7DD49B6FC74C7E50802 /* UIGestureRecognizer+Hook.m in Sources */,
+				C1E6B69E3C7C56766513AFECD1C78B06 /* UITableView+Hook.m in Sources */,
+				A307EC5938B6A1FF3654545BC615DC43 /* UIView+Hook.m in Sources */,
+				A242A3535D8076D971710B3EEE275D84 /* UIViewController+Hook.m in Sources */,
+				3926C237E19237EB94CE40EA83C89B32 /* XHBEventTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D157CE0E3817DE974D4D6F80859AEA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B45AD94820F059B372233B5EFAD4DD /* Pods-XHBEventTracker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB63BD5E2FBB58507B02CBC77E9D0913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBE547DD2AC6BAE37DF384800162844 /* Pods-XHBEventTracker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6EF418D9D7D1B4DEFD8781F0332E6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XHBEventTracker_Example";
+			target = 6EBF562A39FD2346AF1B789E1B7249AF /* Pods-XHBEventTracker_Example */;
+			targetProxy = 2818D947ACC92CA1E98810176089DD14 /* PBXContainerItemProxy */;
+		};
+		DFB6DFEFDF252908F4F9E8EA138BA2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XHBEventTracker;
+			target = 32E0FC05C74080E7445AF0BBC9CCE8DD /* XHBEventTracker */;
+			targetProxy = 0CF9F2CAD36DA99CAC41726C88B80A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B89529A062CE084D54D9BC33ED6D25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		30967FDB1D484844B1A0815170C30F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091EC6A180C43B261EF11D154B712B83 /* XHBEventTracker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XHBEventTracker/XHBEventTracker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XHBEventTracker/XHBEventTracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XHBEventTracker/XHBEventTracker.modulemap";
+				PRODUCT_MODULE_NAME = XHBEventTracker;
+				PRODUCT_NAME = XHBEventTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56E766AE460853A7B57AAB2EA8FFAB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6AAE946B3026F6A5C0597898C1DAFF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 492C61E61BC03458D0A18C6941EB86BE /* XHBEventTracker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XHBEventTracker/XHBEventTracker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XHBEventTracker/XHBEventTracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XHBEventTracker/XHBEventTracker.modulemap";
+				PRODUCT_MODULE_NAME = XHBEventTracker;
+				PRODUCT_NAME = XHBEventTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0880C49A3A900D7F7087F85E4CF2F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DEA80E54B129CE06F1444866368F08 /* Pods-XHBEventTracker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XHBEventTracker_Tests/Pods-XHBEventTracker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XHBEventTracker_Tests/Pods-XHBEventTracker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7958FF780B9CCB1009B53540960C6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E709F57EFD44DA54A3F2DD4FC8E8E8E0 /* Pods-XHBEventTracker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XHBEventTracker_Tests/Pods-XHBEventTracker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XHBEventTracker_Tests/Pods-XHBEventTracker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F868738A647C75CF86B3A3D05C2E6F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34052E33946CBB9B77CF6A38C728F60 /* Pods-XHBEventTracker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XHBEventTracker_Example/Pods-XHBEventTracker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XHBEventTracker_Example/Pods-XHBEventTracker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF6C04C0F14DA86D7B133DBE1AE02F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F548400CA562E95663D0ACC7B0E958E9 /* Pods-XHBEventTracker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XHBEventTracker_Example/Pods-XHBEventTracker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XHBEventTracker_Example/Pods-XHBEventTracker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14F80C8F9C89B2C046C8535FEE6A234E /* Build configuration list for PBXNativeTarget "Pods-XHBEventTracker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7958FF780B9CCB1009B53540960C6CF /* Debug */,
+				B0880C49A3A900D7F7087F85E4CF2F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E766AE460853A7B57AAB2EA8FFAB90 /* Debug */,
+				0B89529A062CE084D54D9BC33ED6D25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4D5D364F3759A29D2F071B0E5BF118 /* Build configuration list for PBXNativeTarget "Pods-XHBEventTracker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6C04C0F14DA86D7B133DBE1AE02F58 /* Debug */,
+				F868738A647C75CF86B3A3D05C2E6F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD837CBE730E98FACB841E5E0497E7C2 /* Build configuration list for PBXNativeTarget "XHBEventTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30967FDB1D484844B1A0815170C30F92 /* Debug */,
+				6AAE946B3026F6A5C0597898C1DAFF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

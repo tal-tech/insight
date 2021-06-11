@@ -1,0 +1,66 @@
+final String LIB_GROUP = 'com.xhb.component.hunter'
+final String LIB_VERSION = '1.1.2'
+final String LIB_ARTIFACT_ID = project.ext.LIB_ARTIFACT_ID
+final boolean isRelease = false
+
+def properties = new Properties()
+properties.load(new FileInputStream("${project.getRootDir()}/local.properties"))
+
+def USERNAME = properties.getProperty("USERNAME")
+def PASSWORD = properties.getProperty("PASSWORD")
+
+def isAndroid() { return project.hasProperty("android") }
+
+if (isAndroid()) { // Android libraries
+    println "Android case"
+    task sourcesJar(overwrite: true, type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+    task javadoc(overwrite: true, type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+} else { // Java libraries
+    println "Java case"
+
+    task sourcesJar(overwrite: true, type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+}
+
+task javadocJar(overwrite: true, type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+// 上传源文件
+artifacts {
+//    archives javadocJar
+    archives sourcesJar
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        final String url = isRelease ?
+                "" :
+                ""
+        final String version = isRelease ?
+                LIB_VERSION :
+                "$LIB_VERSION-SNAPSHOT"
+        repository(url: url) {
+            authentication(userName: USERNAME, password: PASSWORD)
+        }
+        pom.name = "xhb-component"
+        pom.groupId = LIB_GROUP
+        pom.artifactId = LIB_ARTIFACT_ID
+        pom.version = version
+        pom.packaging = 'aar'
+    }
+}

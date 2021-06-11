@@ -1,0 +1,17 @@
+# hunter-event 配置说明:
+# If you use lambda in Java File, you should config `android.enableD8.desugaring=false` in project gradle.properties;
+# Or you will not bury the plugin code to your project.
+
+eventHunterExt {
+    runVariant:                 // 可选参数，DEBUG;RELEASE;ALWAYS;NEVER
+    duplicatedClassSafeMode:    // 是否启用重复class安全模式
+    scanAllExceptBlack:         // 删除除了黑名单外对所有类，当为true的时候，忽略白名单列表
+    whitelist:                  // 白名单；在whitelist只配置*值，代表，扫描所有类
+    blacklist:                  // 黑名单
+
+    trace {                     // 一般测试用
+        enable: boolean         // 是否开启trace
+        outPath: String         // trace输出文件路径
+        canStopAction: boolean  // 是否支持拦截用户操作功能
+    }
+}

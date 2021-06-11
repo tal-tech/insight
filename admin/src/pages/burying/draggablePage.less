@@ -1,0 +1,29 @@
+.draggable-container{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+.draggable-page-header{
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+    position: relative;
+    .draggable-title{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-50%);
+        top:50%;
+        font-size:18px;
+    }
+    &.button{
+        justify-content: center;
+        align-items: center;
+        color: #666666;
+        font-size:15px;
+        >.save-button{
+            margin-left:100px;
+        }
+    }
+}

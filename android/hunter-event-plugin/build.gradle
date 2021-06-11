@@ -1,0 +1,22 @@
+apply plugin: 'groovy'
+
+dependencies {
+    implementation gradleApi()      //gradle sdk
+    implementation localGroovy()    //groovy sdk
+    implementation 'com.android.tools.build:gradle:3.5.3'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.ow2.asm:asm:6.0'
+    implementation 'org.ow2.asm:asm-util:6.0'
+    implementation 'org.ow2.asm:asm-commons:6.0'
+
+    implementation 'com.quinn.hunter:hunter-transform:0.9.3'
+}
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
+
+project.ext.LIB_ARTIFACT_ID = "hunter-event-plugin"
+apply from: '../lib-config.gradle'

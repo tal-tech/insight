@@ -1,0 +1,119 @@
+.burying {
+
+    .header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 20px;
+
+        .search {
+            width: 85%;
+            position: absolute;
+            right: 60px;
+            //border:1px solid red;
+            padding-left: 100px;
+
+            .search-icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 140px;
+                z-index: 999;
+                color: grey;
+            }
+
+            .ant-input-affix-wrapper.ant-input-affix-wrapper-lg {
+                background: #EFEFEF;
+            }
+
+            .ant-input {
+                padding-left: 40px;
+                border-radius: 10px;
+                background: #EFEFEF;
+
+            }
+        }
+
+        .module-button {
+            display: flex;
+            justify-content: space-between;
+
+            .modules {
+                padding-right: 10px;
+                border-right: 1px solid white;
+            }
+
+            .name {
+                cursor: pointer;
+                min-width: 50px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                z-index: 3;
+
+                .text {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    width: 100px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .module-icon {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .module-operation {
+        text-align: center;
+        margin-top: 10px;
+        cursor: pointer;
+        color:#666;
+        font-size:15px;
+        .module-operation-popover{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin:0 auto;
+            .text{
+                font-weight:600;
+                font-size:18px;
+                color:black;
+            }
+        }
+    }
+
+    .main {
+        margin-top: 30px;
+        width: 100%;
+
+        .masonry {
+            column-count: 3;
+            column-gap: 10px;
+            padding: 10px;
+
+            .item {
+                /* break-inside: avoid; */
+                border: 1px solid #999;
+                margin-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+
+                .title {
+                    display: block;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+{
+  "name": "@heibanfe/monitor",
+  "version": "1.0.2",
+  "description": "晓黑板 前端监控埋点",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -cw",
+    "build": "run-s clean build:prod",
+    "build:prod": "cross-env NODE_ENV=production rollup -c",
+    "build:test": "cross-env NODE_ENV=production rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/webpack": "^5.28.0",
+    "cross-env": "^7.0.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}

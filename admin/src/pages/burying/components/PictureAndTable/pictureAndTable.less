@@ -1,0 +1,103 @@
+.page-content-right{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    margin-top:20px;
+    .page-content-right-wrapper{
+        height:680px;
+        margin-bottom:20px;
+        box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+        .page-content-right-name{
+            font-size:14px;
+            margin-bottom:20px;
+            margin-left:15px;
+            margin-top:15px;
+            display: flex;
+            justify-content: space-between;
+            .page-right-button {
+                margin-right: 15px;
+                .page-right-button-btn{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .page-content-right-scroll{
+            overflow: auto;
+            height:600px;
+            padding:15px;
+        }
+    }
+
+    .page-content-picture{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        .ant-empty-normal{
+            margin: 0 auto;
+        }
+        .page-content-image-wrapper{
+            margin-right:15px;
+            >div{
+                width:250px;
+                box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+                img{
+                    width:250px;
+                    cursor: pointer;
+
+                }
+            }
+
+        }
+        .more-image{
+            // 展示区域宽度限定
+            max-height: 570px;
+            max-width: 100%;
+            overflow: auto; // 高度超出 显示滚动条
+            overflow-x: hidden; // x轴隐藏
+            flex: 1;
+            margin-left:30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &.no-data{
+                margin: 0 auto
+            }
+            .ant-image{
+                height:auto;
+                display: inline;
+                margin: 0 15px 15px 0;
+                .ant-image-img{
+                    width:inherit;
+                }
+                img{
+                    cursor: pointer;
+                    width: auto;
+                    //max-width:300px;
+                    margin:0 !important;
+                    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 0px 0px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+                }
+
+            }
+
+        }
+    }
+    .page-content-table{
+        font-size:14px;
+        max-height:500px;
+        box-shadow: 0 1px 3px -2px rgba(0,0,0,.12), 0 3px 8px 0 rgba(0,0,0,.08), 0 4px 14px 4px rgba(0,0,0,.05);
+        .page-content-table-name{
+            margin-top:5px;
+            margin-left:15px;
+        }
+        .page-content-table-list{
+            max-height:1000px;
+            overflow: auto;
+        }
+    }
+}
+.table-bury-name{
+    margin-right:20px;
+}

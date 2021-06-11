@@ -1,0 +1,8 @@
+{
+    "host":"",
+    "port":1234,
+    "user":"",
+    "passwd":"",
+    "database":"",
+    "httpport":1234
+    }
